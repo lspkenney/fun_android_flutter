@@ -23,21 +23,27 @@ class S implements WidgetsLocalizations {
 
   String get Like => "Like";
   String get about => "About";
+  String get action_update => "Update";
   String get appName => "Fun Android";
   String get article_tag_top => "Top";
   String get autoBySystem => "Auto";
   String get cancel => "Cancel";
+  String get checkUpdate => "Check Update";
   String get clear => "Clear";
   String get close => "Close";
   String get coin => "Coin";
   String get collectionRemove => "Remove";
   String get confirm => "Confirm";
   String get darkMode => "Dark Mode";
+  String get downloadAgain => "Download";
+  String get downloadApk => "downloading...";
   String get favourites => "Favorites";
   String get feedback => "FeedBack";
   String get fieldNotNull => "not empty";
   String get fontKuaiLe => "ZCOOL KuaiLe";
   String get githubIssue => "Can't find mail app,please github issues";
+  String get installApk => "Install";
+  String get leastVersion => "Least version now ";
   String get loadFailed => "Load failed,retry later";
   String get loadMoreFailed => "Load Failed,Click Retry!";
   String get loadMoreIdle => "Load More..";
@@ -46,12 +52,14 @@ class S implements WidgetsLocalizations {
   String get logout => "Sign Out";
   String get myFavourites => "My favourites";
   String get needLogin => "Go to Sign In";
+  String get newVersion => "New Version";
   String get noAccount => "No Account ? ";
   String get openBrowser => "Open Browser";
   String get pageStateError => "Load Failed";
   String get pageStateRetry => "Retry";
   String get password => "Password";
   String get rate => "Rate";
+  String get reDownloadApkContent => "It has been detected that it has been downloaded, whether it is installed";
   String get rePassword => "Confirm Password";
   String get refresh => "Refresh";
   String get refreshComplete => "Refresh Complete";
@@ -81,6 +89,7 @@ class S implements WidgetsLocalizations {
   String get twoPwdDifferent => "The two passwords differ";
   String get unLike => "UnLike";
   String get userName => "Username";
+  String get versionUpdate => "Version Update";
   String get viewStateButtonRefresh => "Refresh";
   String get viewStateMessageEmpty => "Nothing Found";
   String get viewStateMessageUnAuth => "Not sign in yet";
@@ -100,7 +109,11 @@ class $zh_CN extends S {
   @override
   String get cancel => "取消";
   @override
+  String get downloadAgain => "重新下载";
+  @override
   String get favourites => "收藏";
+  @override
+  String get action_update => "更新";
   @override
   String get refreshIdle => "下拉可刷新";
   @override
@@ -109,6 +122,10 @@ class $zh_CN extends S {
   String get about => "关于";
   @override
   String get unLike => "取消收藏";
+  @override
+  String get reDownloadApkContent => "检测到本地已下载过该版本,是否直接安装";
+  @override
+  String get checkUpdate => "检查更新";
   @override
   String get tabStructure => "体系";
   @override
@@ -132,6 +149,8 @@ class $zh_CN extends S {
   @override
   String get Like => "收藏";
   @override
+  String get versionUpdate => "版本更新";
+  @override
   String get loadMoreFailed => "加载失败,请点击重试";
   @override
   String get refreshRefreshWhenRelease => "释放可刷新";
@@ -144,11 +163,15 @@ class $zh_CN extends S {
   @override
   String get loadFailed => "加载失败,请稍后重试";
   @override
+  String get installApk => "直接安装";
+  @override
   String get refreshTwoLevel => "欢迎光临,我的空中楼阁";
   @override
   String get article_tag_top => "置顶";
   @override
   String get noAccount => "还没账号? ";
+  @override
+  String get downloadApk => "下载中,请稍后...";
   @override
   String get loadMoreIdle => "上拉加载更多";
   @override
@@ -178,6 +201,8 @@ class $zh_CN extends S {
   @override
   String get fieldNotNull => "不能为空";
   @override
+  String get leastVersion => "已是最新版本";
+  @override
   String get close => "关闭";
   @override
   String get retry => "重试";
@@ -196,7 +221,7 @@ class $zh_CN extends S {
   @override
   String get clear => "清空";
   @override
-  String get needLogin => "还没有登录,请先登录..";
+  String get needLogin => "请先登录";
   @override
   String get refresh => "刷新";
   @override
@@ -225,6 +250,8 @@ class $zh_CN extends S {
   String get searchHistory => "历史搜索";
   @override
   String get loadMoreNoData => "没有更多数据了";
+  @override
+  String get newVersion => "发现新版本,是否更新";
 }
 
 class GeneratedLocalizationsDelegate extends LocalizationsDelegate<S> {

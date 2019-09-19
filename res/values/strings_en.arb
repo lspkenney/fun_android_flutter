@@ -62,5 +62,14 @@
   "collectionRemove": "Remove",
   "article_tag_top": "Top",
   "openBrowser": "Open Browser",
-  "coin": "Coin"
+  "coin": "Coin",
+  "checkUpdate": "Check Update",
+  "action_update": "Update",
+  "leastVersion": "Least version now ",
+  "downloadApk": "downloading...",
+  "reDownloadApkContent": "It has been detected that it has been downloaded, whether it is installed",
+  "downloadAgain": "Download",
+  "installApk": "Install",
+  "newVersion": "New Version",
+  "versionUpdate": "Version Update"
 }

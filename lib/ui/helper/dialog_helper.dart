@@ -22,9 +22,12 @@ class DialogHelper {
                   onPressed: () async {
                     Navigator.of(context).pop(true);
                   },
-                  child: new Text(S.of(context).confirm, style: TextStyle(color: Colors.black)),
+                  child: new Text(S.of(context).confirm,
+                      style: TextStyle(color: Colors.black)),
                 ),
               ],
             ));
   }
 }
+
+

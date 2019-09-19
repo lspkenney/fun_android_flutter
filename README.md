@@ -20,18 +20,21 @@ Language: [English](https://github.com/phoenixsky/fun_android_flutter/blob/maste
 
 # 下载地址: 
   * Android：
-    * [国内云](http://app.cdn.meetingplus.cn/FunAndroid_0.1.3.apk) | [Github DownLoad](https://github.com/phoenixsky/fun_android_flutter/releases)
+    * [国内云](http://app.cdn.meetingplus.cn/FunAndroid_0.1.5.apk) | [Github DownLoad](https://github.com/phoenixsky/fun_android_flutter/releases)
+        
+        ![二维码](https://qr.api.cli.im/qr?data=http%253A%252F%252Fapp.cdn.meetingplus.cn%252FFunAndroid_0.1.5.apk&level=H&transparent=false&bgcolor=%23ffffff&forecolor=%23000000&blockpixel=12&marginblock=2&logourl=http%3A%2F%2Falicliimg.clewm.net%2F020%2F802%2F5802020%2F1566638421597ff5250edab885fcb669e8344a12f03ea1566638376.png&size=260&kid=cliim&key=6e05f023a49bbab42f3245a6a61c2610)
+    
   * iOS:
   
     [![Get it from iTunes](https://lisk.io/assets/svg/download_on_the_app_store_badge.svg)](https://apps.apple.com/cn/app/id1477299503)
     > 为了通过审核,将`android`等相关文字替换为了`iOS`,以及关闭了详情功能.在`2019年9月3日9点30分`后可正常使用.
   
-  * 代码编译:
-    * Flutter SDK (Channel stable, v1.9.1+hotfix.2, on Mac OS X 10.14.6 18G87, locale zh-Hans-CN)
-    * 如果要查看运行效果,一定要使用Release模式,流畅程度差距非常大
-        > Flutter的`Debug`和`Release`的编译模式不同,下分别是 `JIT` 和 `AOT`.`Debug`模式支持`hot reload`.
-    * iOS运行在splash页面卡住,需要检查当前的scheme,如果为`release`,需在命令行执行`flutter build ios`
-    ![image.png](https://upload-images.jianshu.io/upload_images/581515-70d9efec3827e019.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000)
+# 代码编译:
+  * Flutter SDK (Channel dev, v1.10.3)
+  * 如果要查看运行效果,一定要使用Release模式,流畅程度差距非常大
+      > Flutter的`Debug`和`Release`的编译模式不同,下分别是 `JIT` 和 `AOT`.`Debug`模式支持`hot reload`.
+  * iOS运行在splash页面卡住,需要检查当前的scheme,如果为`release`,需在命令行执行`flutter build ios`
+  ![image.png](https://upload-images.jianshu.io/upload_images/581515-70d9efec3827e019.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000)
     
 
 
@@ -42,13 +45,30 @@ Language: [English](https://github.com/phoenixsky/fun_android_flutter/blob/maste
 
 *   3C：我想看最漂亮的。
 
-感谢这位朋友对`FunAndroid`的认可。
+感谢这位朋友对`Fun Android`的认可。
 
 关于App的主题风格，不全是Google倡导的Material Design 也不全是Apple的Cupertino Style。由于我是一个Android开发者，但又长期使用的iPhone，所以App的风格是两者的结合又夹杂了点私货。个人认为iOS版本的确实好看点。
 
 代码中存在的问题，请大家积极提[Issue](https://github.com/phoenixsky/fun_android_flutter/issues).
 
 # 更新
+
+## V0.1.5 `2019-09-19`
+
+- Flutter SDK更新至**Channel dev, v1.10.3**,修复`我的`页面莫名卡死的问题
+- 修改Android端App名称为Fun Android
+
+## V0.1.4 `2019-09-18`
+
+- 适配Flutter 1.9.x
+- **Android加入版本更新**
+- 加入LeanCloud API云服务
+- 移除修复首页黑屏问题的代码`官方在1.10.1版本已修复`
+- 移除之前屏幕适配方案,对NativeView影响过大
+- 修复版本更新导致的AppBar中进度条颜色与背景色不明显的问题
+- 重构Http使用方式,解耦性更好
+- 首页banner高度调整
+- Android状态栏透明
 
 ## 2019-09-10
 
@@ -59,7 +79,7 @@ Language: [English](https://github.com/phoenixsky/fun_android_flutter/blob/maste
 
 ## 2019-09-09
 
-- 修复各页面里文章 `收藏` 状态没有同步的问题
+- 修复各页面里文章 **收藏** 状态没有同步的问题
     - 首页收藏后,其他tab页对应item的收藏状态同步
     - 我的收藏页面里移除收藏.其他页面状态同步
     - 登录登出后各页面收藏状态刷新
@@ -197,6 +217,7 @@ Language: [English](https://github.com/phoenixsky/fun_android_flutter/blob/maste
 # 关于作者
 * [Github](https://github.com/phoenixsky)
 * [个人博客](http://blog.phoenixsky.cn/)
+* [掘金](https://juejin.im/user/567fe97c60b25aa3dcd4bcc0)
 * [简书](https://www.jianshu.com/u/145e6297cb26)
 * Email: moran.fc@gmail.com
 
