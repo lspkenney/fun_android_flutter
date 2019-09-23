@@ -8,7 +8,7 @@ import 'package:fun_android/ui/widget/app_bar.dart';
 import 'package:fun_android/view_model/coin_model.dart';
 import 'package:provider/provider.dart';
 import 'package:fun_android/config/resource_mananger.dart';
-import 'package:fun_android/config/router_config.dart';
+import 'package:fun_android/config/router_manger.dart';
 import 'package:fun_android/provider/provider_widget.dart';
 import 'package:fun_android/ui/widget/bottom_clipper.dart';
 import 'package:fun_android/view_model/login_model.dart';
@@ -212,7 +212,7 @@ class UserListWidget extends StatelessWidget {
             trailing: Icon(Icons.chevron_right),
           ),
           ListTile(
-            title: Text(S.of(context).versionUpdate),
+            title: Text(S.of(context).appUpdateCheckUpdate),
             onTap: () {
               Navigator.push(
                 context,
@@ -228,6 +228,9 @@ class UserListWidget extends StatelessWidget {
             ),
             trailing: Icon(Icons.chevron_right),
           ),
+          SizedBox(
+            height: 30,
+          )
         ]),
       ),
     );

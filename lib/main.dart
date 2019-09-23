@@ -10,7 +10,7 @@ import 'package:pull_to_refresh/pull_to_refresh.dart';
 import 'package:fun_android/config/storage_manager.dart';
 
 import 'config/provider_manager.dart';
-import 'config/router_config.dart';
+import 'config/router_manger.dart';
 import 'generated/i18n.dart';
 import 'view_model/locale_model.dart';
 import 'view_model/theme_model.dart';
@@ -42,6 +42,7 @@ class App extends StatelessWidget {
                   locale: localeModel.locale,
                   localizationsDelegates: const [
                     S.delegate,
+                    RefreshLocalizations.delegate,//下拉刷新
                     GlobalCupertinoLocalizations.delegate,
                     GlobalMaterialLocalizations.delegate,
                     GlobalWidgetsLocalizations.delegate
